@@ -1,0 +1,9 @@
+cron:
+- description: tweet moonphase
+  url: /m
+  schedule: every day 16:35
+  timezone: Asia/Tokyo
+- description: tweet geeklatte
+  url: /g
+  schedule: every day 15:05
+  timezone: Asia/Tokyo

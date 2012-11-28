@@ -1,0 +1,21 @@
+application: yukoppengine
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: (.*)/
+  static_files: static\1/index.html
+  upload: static(.*)/index.html
+- url: /css
+  static_dir: static/css
+- url: /m
+  script: moonphase_bot/tweet.py
+- url: /g
+  script: geeklatte_bot/tweet.py
+- url: /m1
+  script: moonphase_bot/tweet1.py
+- url: /g1
+  script: geeklatte_bot/tweet1.py
+- url: /.*
+  static_dir: htdocs/
