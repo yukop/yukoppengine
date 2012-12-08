@@ -9,7 +9,7 @@ client = oauth.TwitterClient(tokens.application_key, tokens.application_secret, 
 url = 'https://api.twitter.com/1/statuses/update.json'
 
 import urllib2
-import json
+from django.utils import simplejson as json
 import random
 import re
 
